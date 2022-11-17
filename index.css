@@ -1,0 +1,343 @@
+.text {
+  font-family: "Lato";
+  font-style: normal;
+  color: #F8F9EB;
+}
+
+body {
+  margin: 0% auto 0% auto;
+  overflow-x: hidden;
+  background: #3B3B3B;
+}
+
+.contentBox {
+  margin: 0% auto 0% auto;
+  padding-top: 100px;
+  width: 1600px;
+}
+
+.header {
+  background: black;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+.headerContainer {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0% auto 0% auto;
+  width: 750px;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0% 40px 0%;
+}
+
+.nav {
+  list-style-type: none;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #F8F9EB;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.navLink:hover {
+  color: #FAD41C;
+}
+
+.FIrstImg {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.first {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  align-items: center;
+}
+
+.firstHeader {
+  transform: translate(0%, 100%);
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+}
+
+.firstHeader.active {
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+.firstPar {
+  margin-right: auto;
+  margin-left: auto;
+  width: 750px;
+  transform: translate(0%, 100%);
+  opacity: 0;
+  transition: all 0.6s ease 0s;
+}
+
+.firstPar.active {
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+.work {
+  display: flex;
+  align-items: flex-end;
+  height: 600px;
+}
+
+.yellow {
+  color: #FAD41C;
+}
+
+.sectionFirst {
+  background-image: url(img/left-box-1.jpg);
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.workAnimFirst {
+  background-image: url(img/bicycle-logo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
+  transform: translate(-100%, 0%);
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.workAnimFirst.active {
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+.sectionSecond {
+  background-image: url(img/left-box-1.jpg);
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.workAnimSecond {
+  background-image: url(img/bicycle-logo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
+  transform: translate(100%, 0%);
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.workAnimSecond.active {
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+.workBlock {
+  /* padding-top: 100px; */
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.workTextBox {
+  padding: 0px 60px;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  transform: translate(0%, 100%);
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.workTextBox.active {
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+.thin {
+  height: 1px;
+  background-color: #d7d7d7;
+  width: 50px;
+  margin: 8% auto 0 auto;
+}
+
+.arrow {
+  width: 21px;
+  padding-top: 8px;
+  box-sizing: border-box;
+  height: 10px;
+  margin: -1px auto 0 auto;
+}
+
+.arrowImg {
+  position: absolute;
+}
+
+.worksmallImg {
+  display: flex;
+  align-items: flex-end;
+}
+
+.workMidImg {
+  height: 100%;
+  width: 100%;
+}
+
+.third {
+  height: 475px;
+  box-sizing: border-box;
+  padding: 40px 0 110px 0;
+}
+
+.signUp {
+  text-align: center;
+}
+
+.signLogoText {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-weight: 300;
+  background: url(img/logo.png) no-repeat top center;
+  padding-top: 120px;
+  margin: 70px 0 40px 0;
+}
+
+.fourth {
+  height: 530px;
+  display: flex;
+}
+
+.shopBlock {
+  height: 600px;
+  width: 33.3%;
+}
+
+.smallCards {
+  display: flex;
+  height: 50%;
+}
+
+.smallCard {
+  height: 100%;
+  width: 50%;
+  background-color: #646464;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.cardLink {
+  display: none;
+  text-align: center;
+  -webkit-animation: fade 0.5s linear forwards;
+          animation: fade 0.5s linear forwards;
+}
+
+.smallCard:hover {
+  height: 100%;
+  width: 50%;
+  background: #929292;
+  cursor: pointer;
+  align-items: center;
+}
+
+.smallCard:hover a {
+  display: block;
+  padding-top: 55%;
+}
+
+.bigCard {
+  height: 50%;
+  width: 100%;
+  background-color: #F8F9EB;
+}
+
+.bigCard:hover {
+  height: 50%;
+  width: 100%;
+  background: #929292;
+  cursor: pointer;
+  align-items: center;
+}
+
+.bigCard:hover a {
+  display: block;
+  padding-top: 25%;
+}
+
+.fifth {
+  background-color: #3B3B3B;
+  text-align: center;
+  padding: 70px 0;
+}
+
+.shopButton {
+  border: solid 1px #F8F9EB;
+  padding: 15px 50px;
+  text-decoration: none;
+  color: #F8F9EB;
+}
+
+.shopButton:hover {
+  color: #FAD41C;
+  border: solid 1px #FAD41C;
+}
+
+.footer {
+  background-color: #646464;
+  padding: 100px 0;
+}
+
+.footerConteiner {
+  display: flex;
+}
+
+.footerBox {
+  display: flex;
+  justify-content: space-around;
+  width: 33.3%;
+}
+
+.square {
+  height: 32px;
+  width: 32px;
+  display: flex;
+  background-color: #F8F9EB;
+  align-items: center;
+  justify-content: center;
+}
+
+.square:hover {
+  background: #FAD41C;
+}/*# sourceMappingURL=index.css.map */
